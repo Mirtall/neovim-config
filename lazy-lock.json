@@ -1,5 +1,10 @@
 {
-  "lazy.nvim": { "branch": "main", "commit": "6610b15dfd76f7992423916e2b87f031881d7b25" },
+  "lazy.nvim": { "branch": "main", "commit": "761b8388af5bcb451e30d886163fcd129278e1d1" },
   "lualine.nvim": { "branch": "master", "commit": "05d78e9fd0cdfb4545974a5aa14b1be95a86e9c9" },
-  "nvim-web-devicons": { "branch": "master", "commit": "e283ab937e0197b37ec5d8013e49495193407324" }
+  "neogit": { "branch": "master", "commit": "2a7f71a917d206f93306710a451dde1c0f15701d" },
+  "nvim-treesitter": { "branch": "master", "commit": "f2778bd1a28b74adf5b1aa51aa57da85adfa3d16" },
+  "nvim-web-devicons": { "branch": "master", "commit": "e283ab937e0197b37ec5d8013e49495193407324" },
+  "plenary.nvim": { "branch": "master", "commit": "9ac3e9541bbabd9d73663d757e4fe48a675bb054" },
+  "telescope-fzf-native.nvim": { "branch": "main", "commit": "580b6c48651cabb63455e97d7e131ed557b8c7e2" },
+  "telescope.nvim": { "branch": "master", "commit": "057ee0f8783872635bc9bc9249a4448da9f99123" }
 }
