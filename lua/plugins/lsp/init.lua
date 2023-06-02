@@ -11,11 +11,10 @@ return {
 
         local lspconfig = require("lspconfig")
         for server, config in pairs(servers) do
-            lspconfig[server].setup{}
+            lspconfig[server].setup(vim.tbl_deep_extend("force", {
+                on_attach = on_attach,
+                capabilities = vim.deepcopy(capabilities),
+            }, config))
         end
-        -- (vim.tbl_deep_extend("force", {
-        --         on_attach = on_attach,
-        --         capabilities = vim.deepcopy(capabilities),
-        --     }, config))
     end
 }
