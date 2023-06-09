@@ -2,14 +2,9 @@ function map(mode, rhs, lhs)
     vim.api.nvim_set_keymap(mode, rhs, lhs, { noremap = true })
 end
 
-map("i", "(", "()<ESC>i")
-map("i", "{", "{}<ESC>i")
-map("i", "{<CR>", "{<CR>}<ESC>O")
-map("i", "[", "[]<ESC>i")
-map("i", "\"", "\"\"<ESC>i")
-map("i", "'", "''<ESC>i")
-map("n", "-", "ddp")
-map("n", "_", "ddkP")
-map("i", "<c-u>", "<ESC>lvwUa")
-map("n", "<c-U>", "vA<ESC>U<ESC>")
-map("n", "<leader>ev", ":vs $MYVIMRC<CR>")
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = {"cpp", "c"},
+-- command = map("n", "<leader>ss", ":ClangdSwitchSourceHeader<CR>")
+-- doesn't work. apparently `command` waits for a string or smth...
+    command = "nnoremap <leader>ss :ClangdSwitchSourceHeader<CR>",
+})

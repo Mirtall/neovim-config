@@ -25,6 +25,7 @@ set.completeopt = { "longest", "menuone" }
 set.cc = "80"
 set.clipboard = "unnamedplus"
 set.belloff = "all"
+set.hlsearch = false
 
 vim.g.mapleader = ","
 
