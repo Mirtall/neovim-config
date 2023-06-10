@@ -16,4 +16,25 @@ return {
         event = { "BufReadPost", "BufNewFile" },
         config = true,
     },
+    {
+        "numToStr/Comment.nvim",
+        config = function()
+            require("Comment").setup({
+                toggler = {
+                    line = "<leader>cc",
+                    comment = "<leader>bc",
+                },
+                opleader = {
+                    line = "<leader>c",
+                    block = "<leader>b",
+                },
+
+                extra = {
+                    above = "<leader>cO",
+                    below = "<leader>co",
+                    eol = "<leader>cA",
+                },
+            })
+        end,
+    }
 }

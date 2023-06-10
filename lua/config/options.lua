@@ -27,7 +27,7 @@ set.clipboard = "unnamedplus"
 set.belloff = "all"
 set.hlsearch = false
 
-vim.g.mapleader = ","
+vim.g.mapleader = " "
 
 -- Nix tab change
 vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
