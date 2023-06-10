@@ -5,7 +5,9 @@ return {
         local servers = {
             clangd = {},
             pyright = {},
+            ruff_lsp = {},
             ocamllsp = {},
+            rnix = {},
         }
 
         local capabilities = require("cmp_nvim_lsp").default_capabilities()
