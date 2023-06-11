@@ -29,6 +29,8 @@ set.hlsearch = false
 
 vim.g.mapleader = " "
 
+vim.loader.enable()
+
 -- Nix tab change
 vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
   pattern = {"*.nix"},
@@ -40,9 +42,3 @@ vim.api.nvim_create_autocmd("FileType", {
   pattern = {"make"},
   command = "setlocal noexpandtab shiftwidth=8",
 })
-
--- CPP shortcut TODO
--- vim.api.nvim_create_autocmd("FileType", {
---   pattern = {"cpp"},
---   command = "",
--- })

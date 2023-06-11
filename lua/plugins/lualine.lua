@@ -4,7 +4,7 @@ return {
         event = "VeryLazy",
         opts = {
             options = {
-                theme = "powerline",
+                theme = "ayu",
                 section_separators = {
                     left = "",
                     right = "",
