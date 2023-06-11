@@ -12,6 +12,7 @@ return {
             { "<leader>fg", builtin.live_grep, desc = "grep"},
         }
     end,
+    cmd = "Telescope",
     config = function()
         local telescope = require("telescope")
         telescope.setup({})
