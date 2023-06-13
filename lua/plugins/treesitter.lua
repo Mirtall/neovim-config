@@ -1,12 +1,21 @@
 return {
     "nvim-treesitter/nvim-treesitter",
+    version = false,
+    build = ":TSUpdate",
+    event = { "BufReadPost", "BufNewFile" },
     dependencies = {
         "HiPhish/nvim-ts-rainbow2",
     },
-    build = ":TSUpdate",
-    event = { "BufReadPost", "BufNewFile" },
     opts = {
-        ensure_installed = "all",
+        ensure_installed = {
+            "c",
+            "cpp",
+            "lua",
+            "ocaml",
+            "python",
+            "bash",
+            "nix",
+        },
         auto_install = true,
         highlight = {
             enable = true,

@@ -1,6 +1,10 @@
 return {
     'neovim/nvim-lspconfig',
     event = { "BufReadPre", "BufNewFile" },
+    dependencies = {
+        "hrsh7th/cmp-nvim-lsp",
+        "onsails/lspkind.nvim"
+    },
     config = function()
         local servers = {
             clangd = {},
