@@ -31,6 +31,17 @@ vim.g.mapleader = " "
 
 vim.loader.enable()
 
+set.mouse = ""
+
+-- Custom filetypes
+vim.filetype.add({
+    extension = {
+        h = "c",
+        tig = "tiger",
+        tih = "tiger",
+    },
+})
+
 -- Nix tab change
 vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
   pattern = {"*.nix"},
