@@ -10,6 +10,7 @@
   "diffview.nvim": { "branch": "main", "commit": "b3a763f8c7810b352226c95faa7d3ac9fb93b8d9" },
   "formatter.nvim": { "branch": "master", "commit": "fa4f2729cc2909db599169f22d8e55632d4c8d59" },
   "glow.nvim": { "branch": "main", "commit": "bbd0473d72a45094495ee5600b5577823543eefe" },
+  "hardtime.nvim": { "branch": "main", "commit": "68e153649ae9eab2307b2bc7ee8479769c5565ef" },
   "lazy.nvim": { "branch": "main", "commit": "67af46a7f53e06322753cdd8cfd524bbb8ca30a2" },
   "lspkind.nvim": { "branch": "master", "commit": "57610d5ab560c073c465d6faf0c19f200cb67e6e" },
   "lualine.nvim": { "branch": "master", "commit": "05d78e9fd0cdfb4545974a5aa14b1be95a86e9c9" },
