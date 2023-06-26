@@ -5,6 +5,13 @@ return {
         "MunifTanjim/nui.nvim",
         "rcarriga/nvim-notify",
     },
+    keys = function()
+        local notify = require("notify")
+        return {
+            {"<leader>nd", notify.dismiss },
+        }
+    end,
+
     config = function(opts)
         require("noice").setup({
         lsp = {
