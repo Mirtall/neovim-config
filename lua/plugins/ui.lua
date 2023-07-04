@@ -70,11 +70,6 @@ return {
         end
     },
     {
-        "m4xshen/hardtime.nvim",
-        event = "VeryLazy",
-        opts = {}
-    },
-    {
         "Shatur/neovim-ayu",
         priority = 1000,
         opts = {
