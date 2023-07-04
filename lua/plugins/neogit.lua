@@ -1,5 +1,5 @@
 return {
-    "TimUntersberger/neogit",
+    "NeogitOrg/neogit",
     dependencies = {
         "nvim-lua/plenary.nvim",
         "sindrets/diffview.nvim",
@@ -8,7 +8,7 @@ return {
     keys = {
         { "<leader>g", "<CMD>Neogit<CR>", desc = "neogit" },
     },
-    config = {
+    opts = {
         integrations = {
             diffview = true,
         },
