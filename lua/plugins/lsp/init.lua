@@ -12,6 +12,7 @@ return {
             ruff_lsp = {},
             ocamllsp = {},
             rnix = {},
+            rust_analyzer = {},
         }
 
         local capabilities = require("cmp_nvim_lsp").default_capabilities()

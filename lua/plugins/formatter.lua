@@ -14,6 +14,8 @@ return {
                 yaml = { require("formatter.filetypes.yaml").prettier },
                 json = { require("formatter.filetypes.json").prettier },
                 python = { require("formatter.filetypes.python").black },
+                rust = { require("formatter.filetypes.rust").rustfmt },
+
                 ["*"] = { require("formatter.filetypes.any").remove_trailing_whitespace },
             },
         })
