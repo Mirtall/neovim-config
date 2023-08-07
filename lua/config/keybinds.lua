@@ -8,3 +8,7 @@ vim.api.nvim_create_autocmd("FileType", {
 -- doesn't work. apparently `command` waits for a string or smth...
     command = "nnoremap <leader>ss :ClangdSwitchSourceHeader<CR>",
 })
+
+vim.api.nvim_create_autocmd("VimEnter", {
+    command = "nnoremap <leader>ft :TodoTelescope<CR>",
+})
