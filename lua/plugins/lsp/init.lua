@@ -8,10 +8,9 @@ return {
     config = function()
         local servers = {
             clangd = {},
-            pyright = {},
             ruff_lsp = {},
             ocamllsp = {},
-            rnix = {},
+            nil_ls = {},
             rust_analyzer = {},
         }
 
