@@ -10,6 +10,7 @@ return {
         return {
             { "<leader>ff", builtin.find_files, desc = "files"},
             { "<leader>fg", builtin.live_grep, desc = "grep"},
+            { "<leader>fb", builtin.buffers, desc = "buffers"},
         }
     end,
     cmd = "Telescope",
