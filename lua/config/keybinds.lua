@@ -12,3 +12,6 @@ vim.api.nvim_create_autocmd("FileType", {
 vim.api.nvim_create_autocmd("VimEnter", {
     command = "nnoremap <leader>ft :TodoTelescope<CR>",
 })
+
+map("n", "-", "ddp")
+map("n", "_", "kddpk")
