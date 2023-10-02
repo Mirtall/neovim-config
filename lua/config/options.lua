@@ -41,15 +41,3 @@ vim.filetype.add({
         tih = "tiger",
     },
 })
-
--- Nix tab change
-vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
-  pattern = {"*.nix"},
-  command = "set shiftwidth=2",
-})
-
--- Makefile tab change
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = {"make"},
-  command = "setlocal noexpandtab shiftwidth=8",
-})
