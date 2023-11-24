@@ -1,7 +1,7 @@
 return {
     "hrsh7th/nvim-cmp",
     version = false,
-    event = { 'InsertEnter', 'CmdLineEnter' },
+    event = { "InsertEnter", "CmdLineEnter" },
     dependencies = {
         "hrsh7th/cmp-path",
         "hrsh7th/cmp-buffer",
@@ -24,14 +24,14 @@ return {
                 { name = "luasnip" },
                 { name = "nvim_lsp_signature_help" },
                 { name = "path" },
-                { name = "buffer"},
+                { name = "buffer" },
             }),
 
             mapping = cmp.mapping.preset.insert({
-                ['<C-b>'] = cmp.mapping.scroll_docs(-4),
-                ['<C-f>'] = cmp.mapping.scroll_docs(4),
-                ['<C-Space>'] = cmp.mapping.complete(),
-                ['<CR>'] = cmp.mapping.confirm({ select = true }),
+                ["<C-b>"] = cmp.mapping.scroll_docs(-4),
+                ["<C-f>"] = cmp.mapping.scroll_docs(4),
+                ["<C-Space>"] = cmp.mapping.complete(),
+                ["<CR>"] = cmp.mapping.confirm({ select = true }),
                 ["<Tab>"] = cmp.mapping(function(fallback)
                     if cmp.visible() then
                         cmp.select_next_item()
@@ -60,7 +60,7 @@ return {
                         buffer = "[buf]",
                     },
                 }),
-            }
+            },
         })
-    end
+    end,
 }

@@ -16,12 +16,17 @@ return {
                 python = { require("formatter.filetypes.python").black },
                 rust = { require("formatter.filetypes.rust").rustfmt },
 
-                ["*"] = { require("formatter.filetypes.any").remove_trailing_whitespace },
+                ["*"] = {
+                    require("formatter.filetypes.any").remove_trailing_whitespace,
+                },
             },
         })
 
         vim.api.nvim_create_autocmd("BufWritePost", {
-            group = vim.api.nvim_create_augroup("my_format_write", { clear = true }),
+            group = vim.api.nvim_create_augroup(
+                "my_format_write",
+                { clear = true }
+            ),
             pattern = "*",
             callback = function()
                 if vim.g.format_on_save then

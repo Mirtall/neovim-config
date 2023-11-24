@@ -1,6 +1,6 @@
 return {
     {
-        'folke/noice.nvim',
+        "folke/noice.nvim",
         event = "VeryLazy",
         dependencies = {
             "MunifTanjim/nui.nvim",
@@ -9,7 +9,7 @@ return {
         keys = function()
             local notify = require("notify")
             return {
-                {"<leader>d", notify.dismiss },
+                { "<leader>d", notify.dismiss },
             }
         end,
 
@@ -28,14 +28,14 @@ return {
                     long_message_to_split = true,
                     inc_rename = false,
                     lsp_doc_border = false,
-                }
+                },
             })
         end,
     },
     {
         "goolord/alpha-nvim",
-        event =  "VimEnter",
-        dependencies = { 'nvim-tree/nvim-web-devicons' },
+        event = "VimEnter",
+        dependencies = { "nvim-tree/nvim-web-devicons" },
         config = function()
             local alpha = require("alpha")
             local dashboard = require("alpha.themes.dashboard")
@@ -52,22 +52,28 @@ return {
                 "| |              | || |              | || |              | || |              | || |              | || |              | |",
                 "| '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' |",
                 " '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'",
-
-
             }
 
             dashboard.section.buttons.val = {
                 dashboard.button("n", " > New file", "<CMD>ene<CR>"),
-                dashboard.button("f", "󰱽 > Find files", "<CMD>Telescope find_files<CR>"),
+                dashboard.button(
+                    "f",
+                    "󰱽 > Find files",
+                    "<CMD>Telescope find_files<CR>"
+                ),
                 dashboard.button("g", " > Git", "<CMD>Neogit<CR>"),
-                dashboard.button("r", "󰑑 > Find word", "<CMD>Telescope live_grep<CR>"),
+                dashboard.button(
+                    "r",
+                    "󰑑 > Find word",
+                    "<CMD>Telescope live_grep<CR>"
+                ),
                 dashboard.button("p", "󰚥 > Plugins", "<CMD>Lazy<CR>"),
                 dashboard.button("P", " > Profile", "<CMD>Lazy profile<CR>"),
                 dashboard.button("q", " > Quit", "<CMD>qa<CR>"),
             }
 
             alpha.setup(dashboard.opts)
-        end
+        end,
     },
     {
         "Shatur/neovim-ayu",
@@ -79,7 +85,7 @@ return {
             local ayu = require("ayu")
             ayu.setup(opts)
             ayu.colorscheme()
-        end
+        end,
     },
     {
         "nvim-lualine/lualine.nvim",

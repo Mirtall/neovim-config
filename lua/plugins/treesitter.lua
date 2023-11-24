@@ -22,11 +22,11 @@ return {
         },
         rainbow = {
             enable = true,
-            query = 'rainbow-parens',
+            query = "rainbow-parens",
             --strategy = require('ts-rainbow').strategy.global,
         },
     },
     config = function(_, opts)
         require("nvim-treesitter.configs").setup(opts)
-    end
+    end,
 }

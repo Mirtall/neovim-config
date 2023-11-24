@@ -3,9 +3,9 @@ function map(mode, rhs, lhs)
 end
 
 vim.api.nvim_create_autocmd("FileType", {
-    pattern = {"cpp", "c"},
--- command = map("n", "<leader>ss", ":ClangdSwitchSourceHeader<CR>")
--- doesn't work. apparently `command` waits for a string or smth...
+    pattern = { "cpp", "c" },
+    -- command = map("n", "<leader>ss", ":ClangdSwitchSourceHeader<CR>")
+    -- doesn't work. apparently `command` waits for a string or smth...
     command = "nnoremap <leader>ss :ClangdSwitchSourceHeader<CR>",
 })
 

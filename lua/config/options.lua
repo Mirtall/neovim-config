@@ -6,7 +6,6 @@ set.background = "dark"
 set.list = true
 set.listchars = { tab = "»·", trail = "·" }
 
-
 -- Tab style
 set.expandtab = true
 set.smarttab = true
