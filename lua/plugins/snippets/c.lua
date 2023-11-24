@@ -1,6 +1,7 @@
 local ls = require("luasnip")
 
 local i = ls.insert_node
+local f = ls.function_node
 local fmt = require("luasnip.extras.fmt").fmt
 
 return {
@@ -47,6 +48,25 @@ return {
                 i(2),
                 i(3),
                 i(4),
+            }
+        )
+    ),
+    ls.snippet(
+        "defh",
+        fmt(
+            [[
+                #ifndef {file}
+                #define {file}
+
+                {code}
+
+                #endif /* ! {file} */
+            ]],
+            {
+                file = f(function()
+                    return vim.fn.expand("%:t"):gsub("[-.]", "_"):upper()
+                end),
+                code = i(1),
             }
         )
     ),
