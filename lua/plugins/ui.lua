@@ -9,7 +9,7 @@ return {
         keys = function()
             local notify = require("notify")
             return {
-                {"<leader>nd", notify.dismiss },
+                {"<leader>d", notify.dismiss },
             }
         end,
 
