@@ -72,6 +72,14 @@ return {
                 dashboard.button("q", " > Quit", "<CMD>qa<CR>"),
             }
 
+            local function footer()
+                local config = require("lazy.core.config")
+                local plugins = vim.tbl_values(config.plugins)
+                return "Loaded " .. #plugins .. " plugins."
+            end
+
+            dashboard.section.footer.val = footer()
+
             alpha.setup(dashboard.opts)
         end,
     },
