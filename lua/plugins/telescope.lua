@@ -11,11 +11,17 @@ return {
             { "<leader>ff", builtin.find_files, desc = "files"},
             { "<leader>fg", builtin.live_grep, desc = "grep"},
             { "<leader>fb", builtin.buffers, desc = "buffers"},
+            { "<leader>fh", require("telescope").extensions.harpoon.marks, desc = "buffers"},
         }
     end,
     cmd = "Telescope",
     config = function()
         local telescope = require("telescope")
-        telescope.setup({})
+        telescope.setup({
+            file_ignore_patterns = {
+                "%.o",
+            },
+        })
+        require("telescope").load_extension('harpoon')
     end,
 }
