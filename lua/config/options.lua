@@ -40,3 +40,5 @@ vim.filetype.add({
         tih = "tiger",
     },
 })
+
+vim.g.coqtail_noimap = 1

@@ -15,7 +15,8 @@ return {
                 json = { require("formatter.filetypes.json").prettier },
                 python = { require("formatter.filetypes.python").black },
                 rust = { require("formatter.filetypes.rust").rustfmt },
-
+                sql = { require("formatter.filetypes.sql").sqlfluff },
+                html = { require("formatter.filetypes.html").prettier },
                 ["*"] = {
                     require("formatter.filetypes.any").remove_trailing_whitespace,
                 },
