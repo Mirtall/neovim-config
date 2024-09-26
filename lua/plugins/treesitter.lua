@@ -1,10 +1,11 @@
 return {
+    {
     "nvim-treesitter/nvim-treesitter",
     version = false,
     build = ":TSUpdate",
     event = { "BufReadPost", "BufNewFile" },
     dependencies = {
-        "HiPhish/nvim-ts-rainbow2",
+        "hiphish/rainbow-delimiters.nvim",
     },
     opts = {
         ensure_installed = {
@@ -20,13 +21,14 @@ return {
         highlight = {
             enable = true,
         },
-        rainbow = {
-            enable = true,
-            query = "rainbow-parens",
-            --strategy = require('ts-rainbow').strategy.global,
+        -- rainbow = {
+            --     enable = true,
+            --     query = "rainbow-parens",
+            --     strategy = require("ts-rainbow").strategy.global,
+            -- },
         },
+        config = function(_, opts)
+            require("nvim-treesitter.configs").setup(opts)
+        end,
     },
-    config = function(_, opts)
-        require("nvim-treesitter.configs").setup(opts)
-    end,
 }
