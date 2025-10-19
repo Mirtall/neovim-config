@@ -17,12 +17,9 @@ return {
 
         local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-        local lspconfig = require("lspconfig")
         for server, config in pairs(servers) do
-            lspconfig[server].setup(vim.tbl_deep_extend("force", {
-                on_attach = on_attach,
-                capabilities = vim.deepcopy(capabilities),
-            }, config))
+            vim.lsp.config(server, config)
+            vim.lsp.enable(server)
         end
 
         vim.api.nvim_create_autocmd("LspAttach", {
