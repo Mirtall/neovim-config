@@ -6,7 +6,7 @@ vim.api.nvim_create_autocmd("FileType", {
     pattern = { "cpp", "c" },
     -- command = map("n", "<leader>ss", ":ClangdSwitchSourceHeader<CR>")
     -- doesn't work. apparently `command` waits for a string or smth...
-    command = "nnoremap <leader>ss :ClangdSwitchSourceHeader<CR>",
+    command = "nnoremap <leader>ss :LspClangdSwitchSourceHeader<CR>",
 })
 
 vim.api.nvim_create_autocmd("VimEnter", {

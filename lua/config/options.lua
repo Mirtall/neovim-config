@@ -27,6 +27,9 @@ set.belloff = "all"
 set.hlsearch = false
 
 vim.g.mapleader = " "
+vim.diagnostic.config({
+    virtual_text = true,
+})
 
 vim.loader.enable()
 

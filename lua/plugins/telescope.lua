@@ -11,6 +11,8 @@ return {
             { "<leader>ff", builtin.find_files, desc = "files" },
             { "<leader>fg", builtin.live_grep, desc = "grep" },
             { "<leader>fb", builtin.buffers, desc = "buffers" },
+            { "<leader>fd", builtin.diagnostics, desc = "diagnostics" },
+            { "<leader>fr", builtin.lsp_references, desc = "references" },
             {
                 "<leader>fh",
                 require("telescope").extensions.harpoon.marks,
