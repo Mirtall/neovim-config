@@ -21,7 +21,7 @@ set.relativenumber = true
 set.completeopt = { "longest", "menuone" }
 
 -- Misc
-set.cc = "80"
+set.cc = "120"
 set.clipboard = "unnamedplus"
 set.belloff = "all"
 set.hlsearch = false
