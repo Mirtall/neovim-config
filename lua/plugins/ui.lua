@@ -67,6 +67,7 @@ return {
                     "󰑑 > Find word",
                     "<CMD>Telescope live_grep<CR>"
                 ),
+                dashboard.button("s", " > Sessions", "<CMD>AutoSession search<CR>"),
                 dashboard.button("p", "󰚥 > Plugins", "<CMD>Lazy<CR>"),
                 dashboard.button("P", " > Profile", "<CMD>Lazy profile<CR>"),
                 dashboard.button("q", " > Quit", "<CMD>qa<CR>"),

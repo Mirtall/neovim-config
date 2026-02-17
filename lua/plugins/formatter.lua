@@ -17,6 +17,7 @@ return {
                 rust = { require("formatter.filetypes.rust").rustfmt },
                 sql = { require("formatter.filetypes.sql").sqlfluff },
                 html = { require("formatter.filetypes.html").prettier },
+                go = { require("formatter.filetypes.go").gofmt },
                 ["*"] = {
                     require("formatter.filetypes.any").remove_trailing_whitespace,
                 },

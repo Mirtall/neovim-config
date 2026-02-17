@@ -15,3 +15,9 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
     pattern = { "*.news", "*.ticket" },
     command = "setlocal cc=72",
 })
+
+-- Makefile tab change
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = { "json" },
+    command = "setlocal shiftwidth=2",
+})

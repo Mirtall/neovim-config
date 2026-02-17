@@ -33,6 +33,8 @@ vim.diagnostic.config({
 
 vim.loader.enable()
 
+vim.o.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
+
 set.mouse = ""
 
 -- Custom filetypes

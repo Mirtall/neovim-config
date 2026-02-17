@@ -9,7 +9,7 @@ return {
     },
     opts = {
         keymaps = {
-            ["hh"] = { "actions.toggle_hidden", mode = "n" },
+            ["<leader>h"] = { "actions.toggle_hidden", mode = "n" },
         },
     },
 }
