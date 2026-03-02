@@ -10,13 +10,13 @@ return {
             panel = { enabled = false },
         },
     },
-    {
-        "zbirenbaum/copilot-cmp",
-        event = "InsertEnter",
-        config = function()
-            require("copilot_cmp").setup()
-        end,
-    },
+    -- {
+    --     "zbirenbaum/copilot-cmp",
+    --     event = "InsertEnter",
+    --     config = function()
+    --         require("copilot_cmp").setup()
+    --     end,
+    -- },
     {
         "CopilotC-Nvim/CopilotChat.nvim",
         dependencies = {
